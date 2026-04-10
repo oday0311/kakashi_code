@@ -111,11 +111,11 @@ const features = [...featureSet]
 
 const outfile = compile
   ? dev
-    ? './dist/cli-dev'
-    : './dist/cli'
+    ? './dist/kakaxi-dev'
+    : './dist/kakaxi'
   : dev
-    ? './cli-dev'
-    : './cli'
+    ? './kakaxi-dev'
+    : './kakaxi'
 const buildTime = new Date().toISOString()
 const version = dev ? getDevVersion(pkg.version) : pkg.version
 
